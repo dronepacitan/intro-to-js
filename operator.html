@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operator</title>
+</head>
+<body>
+    <label for="txtA">A:</label>
+    <input type="text" size="3" name="txtA" id="txtA">
+    <label for="txtB">B:</label>
+    <input type="text" size="3" name="txtB" id="txtB">
+    <button onclick="hitung()">Hitung</button>
+    <input type="text" name="hasil" id="hasil" readonly size="3">
+    <script>
+        function hitung() {
+            let a = document.getElementById("txtA");
+            let b = document.getElementById("txtB");
+            let h = document.getElementById("hasil");
+            h.value = parseFloat(a.value) + parseFloat(b.value);
+        } 
+    </script>
+</body>
+</html>
