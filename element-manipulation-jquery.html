@@ -8,11 +8,13 @@
 </head>
 <body>
     <h1 id="judul">He who controls the past commands the future.</h1>
-    <!-- pemanggilan function melalui event -->
     <button id="btn">Ganti Judul</button>
     <script>
+        // jQuery memastikan semua dokumen selesai dimuat 
         $(document).ready( function() {
+            // menangkap event click pada elemen dengan ID btn
             $("#btn").click( function() {
+                // memanipulasi elemen dengan ID judul
                 $("#judul").html("He who commands the future conquers the past.")
             });
         });
