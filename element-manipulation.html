@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - DOM Element Manipulation</title>
+</head>
+<body>
+    <h1 id="judul">He who controls the past commands the future.</h1>
+    <!-- pemanggilan function melalui event -->
+    <button onclick="gantiJudul()">Ganti Judul</button>
+    <script>
+        // deklarasi function
+        function gantiJudul() {
+            // deklarasi dan inisialisasi object
+            let h = document.getElementById('judul');
+            // pengubahan property 
+            h.innerHTML = "He who commands the future conquers the past.";
+            // cara lain, dengan chaining
+            // document.getElementById('judul').innerHTML = "He who commands the future conquers the past.";
+        }
+    </script>
+</body>
+</html>

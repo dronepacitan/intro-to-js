@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - DOM Element Manipulation using jQuery</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id="judul">He who controls the past commands the future.</h1>
+    <!-- pemanggilan function melalui event -->
+    <button id="btn">Ganti Judul</button>
+    <script>
+        $(document).ready( function() {
+            $("#btn").click( function() {
+                $("#judul").html("He who commands the future conquers the past.")
+            });
+        });
+    </script>
+</body>
+</html>
